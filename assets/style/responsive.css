@@ -1,7 +1,48 @@
-@media screen and (max-width:700px){
+@media screen and (max-width:996px){
+    .inner-body {
+        display: block;
+    }
+
+    header {
+        width: 100vw;
+        border-right: 0;
+        border-bottom: 1px solid;
+    }
+
     header .container{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    header .logo {
+        position: relative;
+        height: 75%;
+        right: 0px;
+        top: 0px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    header nav a {
+        margin-right: 20px;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .swiper-slide .container {
+        padding: 0 1.5em;
+    }
+
+    .swiper-slide {
+        background-position: center!important;
     }
 
     .botao{
@@ -9,10 +50,25 @@
         width: 300px;
     }
 
+    #gameslist {
+        height: auto;
+        padding: 2em;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    header nav {
+        position: relative;
+        gap: 0px;
+    }
 }
 
 @media screen and (min-width:1000px){
+    #gameslist {
+        padding: 0 0 0 6em;
+    }
     .descricao{
-        width: 50%;
+        width: 45%;        
     }
 }

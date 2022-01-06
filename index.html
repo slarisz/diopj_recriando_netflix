@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carme&family=Chakra+Petch:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
     <!--responsividade-->
     <link rel="stylesheet" href="assets/style/responsive.css">
@@ -17,72 +18,153 @@
     <link rel="stylesheet" href="assets/style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/style/owl/owl.theme.default.min.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="shortcut icon" href="assets/img/favicon.png" />
     <title>Ilha Indie</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img class="logo" src="assets/img/logo-branco.svg" />
-            <nav>
-                <a href="#banner-jogo">Inicio</a>
-                <a href="#gameslist">Gamindies</a>
-                <a href="#">Descubra</a>
-            </nav>
+    <div id="dv-modal" class="modal-video modal-type">
+        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="modal-title">Stray</h1>
+            <span id="close-modal" class="material-icons-outlined md-close">close</span>
         </div>
-    </header>
-
-    <main>
-        <div id="banner-jogo" class="game-principal">
-            <div class="container">
-                <h3 class="titulo">Conheça STRAY</h3>
-                <p class="descricao">O jogo lançado pelo estúdio BlueTwelve mistura exploração e solução de quebra-cabeças com sequências de ação rápidas.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        <strong>ASSISTIA O TRAILER</strong>
-                    </button>
-                </div>
+        <div class="modal-content">
+            <iframe id="vd1" width="900" height="500" src="https://www.youtube.com/embed/u84hRUQlaio?controls=0" title="YouTube video player - Video Stary(Game)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="modal-descricao">
+                <h3>Jogo que te coloca na pele de um gato ganha gameplay e chega em 2022</h3>
+                <p>Perdido, sozinho e separado da própria família, um gato precisa solucionar um mistério ancestral para escapar de uma cidade futurista esquecida e encontrar o caminho de casa.<br/><br/>
+                    Stray é um jogo de aventura felina em terceira pessoa que se passa nos becos detalhados iluminados por néon de uma cidade futurista, e os obscuros locais suspeitos de seu submundo.  Veja o mundo pelos olhos de um gato de rua e interaja com o ambiente de maneiras divertidas. </p>
             </div>
-        </div>
-    </main>
-
-    <div id="gameslist" class="carrosel-games">
-        <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini1.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini2.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini3.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini4.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini5.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini6.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini7.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini8.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini9.png" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-game" src="assets/img/mini10.png" alt="" srcset="">
-                </div>
         </div>
     </div>
 
+    <div id="dv-modal2" class="modal-video modal-type">
+        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="modal-title">Hollow Knight 2</h1>
+            <span id="close-modal" class="material-icons-outlined md-close">close</span>
+        </div>
+        <div class="modal-content">
+            <iframe id="vd2" width="900" height="500" src="https://www.youtube.com/embed/u84hRUQlaio?controls=0" title="YouTube video player - Video Stary(Game)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="modal-descricao">
+                <h3>Jogo que te coloca na pele de um gato ganha gameplay e chega em 2022</h3>
+                <p>Perdido, sozinho e separado da própria família, um gato precisa solucionar um mistério ancestral para escapar de uma cidade futurista esquecida e encontrar o caminho de casa.<br/><br/>
+                    Stray é um jogo de aventura felina em terceira pessoa que se passa nos becos detalhados iluminados por néon de uma cidade futurista, e os obscuros locais suspeitos de seu submundo.  Veja o mundo pelos olhos de um gato de rua e interaja com o ambiente de maneiras divertidas. </p>
+            </div>
+        </div>
+    </div>
 
+    <div id="dv-modal3" class="modal-video modal-type">
+        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="modal-title">Kena: Bridge of Spirits</h1>
+            <span id="close-modal" class="material-icons-outlined md-close">close</span>
+        </div>
+        <div class="modal-content">
+            <iframe id="vd3" width="900" height="500" src="https://www.youtube.com/embed/pWh5388AEHw?controls=0" title="YouTube video player - Video Stary(Game)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="modal-descricao">
+                <h3>Uma aventura de ação e história, que combina exploração e combate em ritmo acelerado.</h3>
+                <p>O game coloca os jogadores no controle de Kena, uma jovem guia de espíritos que segue os passos de seu pai na tarefa de apaziguar almas errantes que têm dificuldades em fazer a travessia para o outro mundo. <br/><br/>
+                    Como uma forma de melhorar suas habilidades, Kena vai parar em um vilarejo remoto cuja população desapareceu misteriosamente. Para piorar a situação, uma energia negativa e corrupta infestou o lugar. Com a ajuda de pequenas criaturinhas guardiãs chamadas Rot, Kena deve dar seu melhor para auxiliar os espíritos remanescentes e investigar a fonte dos problemas do vilarejo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-body">
+        <header>
+            <div class="container">
+                <img class="logo" src="assets/img/logo-branco.svg" />
+                <nav>
+                    <a class="menu-icon" href="#banner-home"><span class="material-icons-outlined" title="Início">home</span></a>
+                    <a class="menu-icon" href="#gameslist"><span class="material-icons-outlined" title="Gamindies">gamepad</span></a>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <div id="banner-home" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background: linear-gradient(to left, rgba(0,0,0,.0),rgba(20,0,52,.75)100%), url('assets/img/capa-img.png');">
+                    <div class="container">
+                        <h3 class="titulo">Conheça STRAY</h3>
+                        <p class="descricao">O jogo lançado pelo estúdio BlueTwelve mistura exploração e solução de quebra-cabeças com sequências de ação rápidas.</p>
+                        <div class="botoes">
+                            <button id="btnShowGame" role="button" data-modal="dv-modal" class="botao botao-sv">
+                                <i class="fas fa-play"></i>
+                                <strong>ASSISTIR AO TRAILER</strong>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="background: linear-gradient(to left, rgba(0,0,0,.0),rgba(20,0,52,.75)100%), url('assets/img/capa2.png');">
+                    <div class="container">
+                        <h3 class="titulo">Hollow Knight 2?</h3>
+                        <p class="descricao">Hollow Knight: Silksong é uma sequência de Hollow Knight estrelado pela personagem Hornet, e tem sido aguardado ansiosamente pelos fãs</p>
+                        <div class="botoes">
+                            <button role="button" class="botao botao-sv">
+                                <i class="fas fa-play"></i>
+                                <strong>ASSISTIR AO TRAILER</strong>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="background: linear-gradient(to left, rgba(0,0,0,.0),rgba(20,0,52,.75)100%), url('assets/img/capa3.png');">
+                    <div class="container">
+                        <h3 class="titulo">Kena: Bridge of Spirits</h3>
+                        <p class="descricao">Desenvolvido pela Ember Lab o jogo foi o vencedor da categoria Melhor Game Indie no evento do TGA(The Game Awards) de 2021. Conheça um pouco mais sobre Kena!</p>
+                        <div class="botoes">
+                            <button role="button" data-modal="dv-modal3" class="botao botao-sv">
+                                <i class="fas fa-play"></i>
+                                <strong>SAIBA MAIS</strong>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div id="gameslist" class="carrosel-games">
+                <h1 class="modal-title">Gamindies</h1>
+                <div class="owl-carousel owl-theme">
+                        <a href="https://www.youtube.com/watch?v=YV2lp6p_gXw" target="_blank" class="item">                            
+                            <img class="box-game" src="assets/img/mini1.png" alt="" srcset="">                            
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=x5mshaalJVc" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini2.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=Wj3dUvGLjNQ" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini3.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=ClZe5x8Tfiw" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini4.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=RcLzk_r7GXY" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini5.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=ul7kNFD6noU" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini6.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=tcQQkStphwE" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini7.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=mg5s5Dq50Rg" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini8.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=UzowO9v_-oc" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini9.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=1Hojv0m3TqA" target="_blank" class="item">  
+                            <img class="box-game" src="assets/img/mini10.png" alt="" srcset="">
+                        </a>                        
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="assets/js/owl/jquery.min.js"></script>

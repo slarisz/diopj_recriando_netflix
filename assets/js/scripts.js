@@ -1,15 +1,30 @@
-let header = document.querySelector("header");
-let lastScrollTop = 0;
+/* modais */
+let botaoSV = document.querySelectorAll(".botao-sv");
+let closeMD = document.querySelectorAll(".md-close");
 
-window.addEventListener("scroll", () => {
-    let scrollPos = pageYOffset || document.documentElement.scrollTop;
+botaoSV.forEach(function(btn){
+    btn.onclick = function(){
+        let modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).style.display = 'flex';
+    };
+});
 
-    if (scrollPos > lastScrollTop) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+closeMD.forEach(function(btn){
+    btn.onclick = function(){
+        let modal = btn.closest('.modal-type').style.display = 'none';
+    };
+});
 
-    console.log(scrollPos);
-    lastScrollTop = scrollPos;
+/* slider banner */
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    effect: "fade",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
 });
